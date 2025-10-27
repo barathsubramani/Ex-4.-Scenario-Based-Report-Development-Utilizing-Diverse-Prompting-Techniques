@@ -1,16 +1,16 @@
 # Ex-4 Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 
-## # Objective
+## Objective
 
 Design and develop an AI-powered chatbot that can handle customer inquiries, provide support, and improve customer experience in a retail environment. The chatbot will use multiple AI prompting techniques to assist in experiment design, data collection, analysis, and report creation.
 
 
-## # Aim
+## Aim
 
 To analyze and evaluate how various prompting techniques—Zero-Shot, Few-Shot, Role/Persona Prompting, Chain-of-Thought (CoT), and Structured Output—impact chatbot response accuracy, tone consistency, and overall customer satisfaction in a retail support scenario.
 
 
-## # Algorithm
+## Algorithm
 
 1. **Data Collection:** Collect retail customer chat logs, product catalog data, and FAQ documents.
 2. **Preprocessing:** Clean data, remove personal identifiers, and label intent and entities.
@@ -21,9 +21,9 @@ To analyze and evaluate how various prompting techniques—Zero-Shot, Few-Shot, 
 7. **Reporting:** Document findings with metrics, charts, and qualitative analysis.
 
 
-## # Prompts
+## Prompts
 
-### ## 1. Zero-Shot Prompt
+### 1. Zero-Shot Prompt
 
 
 You are a helpful retail assistant. A customer says: "{customer_message}". Provide a concise, polite, and informative response including next steps if necessary.
@@ -34,7 +34,7 @@ Customer: *“My order #4567 hasn’t arrived yet.”*\
 Chatbot: *“I’m sorry for the delay. Please share your order number, and I’ll check its status right away.”*
 
 
-### ## 2. Few-Shot Prompt
+###  2. Few-Shot Prompt
 
 Example 1:
 Customer: "How do I return an item?"
@@ -48,14 +48,14 @@ Customer: "{customer_message}"
 
 
 
-### ## 3. Role/Persona Prompt
+### 3. Role/Persona Prompt
 
 
 You are a friendly and empathetic customer service representative for Acme Retail. Always greet the user warmly, stay polite, and provide a clear next step.
 
 
 
-### ## 4. Chain-of-Thought (CoT) Prompt
+### 4. Chain-of-Thought (CoT) Prompt
 
 Follow these steps:
 1. Identify the intent of the message.
@@ -65,7 +65,7 @@ Follow these steps:
    
 
 
-### ## 5. Structured Output Prompt
+### 5. Structured Output Prompt
 
 
 Given the customer message: "{customer_message}", output in JSON format with fields: intent, entities, action, and reply.
@@ -83,7 +83,7 @@ Given the customer message: "{customer_message}", output in JSON format with fie
 ```
 
 
-## # Output
+## Output
 
 A functional AI chatbot capable of managing customer interactions, responding with accurate and empathetic answers, and escalating complex queries when required.
 
@@ -91,7 +91,7 @@ A functional AI chatbot capable of managing customer interactions, responding wi
 **Chatbot:** “I’m sorry to hear that. Yes, you can return damaged items within 30 days. Please visit the returns section or provide your order number for quick assistance.”
 
 
-## # Result
+## Result
 
 - **Few-Shot Prompting** achieved the best overall performance with **92% accuracy** and **4.6/5 helpfulness**.
 - **Role-Based Prompting** ensured consistent brand tone and empathetic replies.
